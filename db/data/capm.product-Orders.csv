@@ -1,0 +1,4 @@
+ID,orderNumber,quantity,totalAmount,status,orderDate
+1,ORD-2026-0001,5,6499.95,Approved,2026-05-01
+2,ORD-2026-0002,10,299.90,Pending,2026-05-03
+3,ORD-2026-0003,2,799.98,Pending,2026-05-05

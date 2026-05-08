@@ -1,0 +1,11 @@
+ID,name,price,category,stockLevel
+1,Laptop Pro,1299.99,Electronics,50
+2,Wireless Mouse,29.99,Accessories,200
+3,USB-C Hub,79.99,Accessories,150
+4,Monitor 27 inch,399.99,Electronics,30
+5,Keyboard Mechanical,149.99,Accessories,75
+6,Webcam HD,89.99,Electronics,100
+7,Desk Lamp LED,45.99,Furniture,80
+8,Chair Ergonomic,299.99,Furniture,25
+9,Standing Desk,499.99,Furniture,15
+10,Headset Bluetooth,129.99,Accessories,120
