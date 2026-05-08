@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+gen/
+mtar/
+
+# Logs
+*.log
+server.log
+
+# Local database
+*.sqlite
+*.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.*
+*.env
+
+# Package manager files
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# MTA build
+.mta-local/

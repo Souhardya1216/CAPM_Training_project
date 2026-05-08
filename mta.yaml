@@ -1,0 +1,35 @@
+_schema-version: '3.1'
+ID: capm-product-supplier
+version: 1.0.0
+description: CAP Product & Supplier Management Service
+
+parameters:
+  enable-parallel-deployments: true
+
+resources:
+  - name: Hana-db-capm
+    type: com.sap.xs.hana-container
+    properties:
+      hana-service: hana
+      service-plan: hana-free
+
+modules:
+  - name: capm-product-supplier-srv
+    type: nodejs
+    path: gen/srv
+    parameters:
+      memory: 512M
+      disk-quota: 1024M
+    requires:
+      - name: Hana-db-capm
+    properties:
+      XS_APP_ROUTES:
+        - route: '*'
+    build-parameters:
+      builder: npm-ci
+
+  - name: capm-product-supplier-db
+    type: hdb
+    path: gen/db
+    requires:
+      - name: Hana-db-capm

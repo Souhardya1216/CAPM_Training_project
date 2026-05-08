@@ -1,0 +1,25 @@
+{
+  "name": "capm-product-supplier",
+  "version": "1.0.0",
+  "description": "CAP Product & Supplier Management Service",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/capm-product-supplier.git"
+  },
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "@sap/cds": "^9.9.1",
+    "@sap/hana-client": "^2.22.31",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js",
+    "build": "cds build --to hana",
+    "deploy": "mbt build -p cf && cf deploy mtar/*.mtar"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
